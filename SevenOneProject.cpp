@@ -15,4 +15,6 @@ int main ()
         cout << "Multiplied by 10: " << (i *10) << endl;
         cout << endl;
     }
+
+    return 0;
 }
