@@ -7,12 +7,19 @@ using namespace std;
 class Spiderman
 {
     //attributes
-    public:
+    private:
         string earth;
         bool anomaly;
         
 
     public:
+
+    //Spiderman Constructor
+    Spiderman(string e, bool a)
+    {
+        earth = e;
+        anomaly = a;
+    }
 
     //accessor and mutator Methods for Earth
     string getEarth()
@@ -51,11 +58,18 @@ class Spiderman
 class Batman
 {
     //attributes
-    public:
+    private:
         int intelligenceLevel;
         string sidekickName;
     
     public:
+
+        //Batman Constructor
+        Batman(int iL, string skn)
+        {
+            intelligenceLevel = iL;
+            sidekickName = skn;
+        }
 
     //accessor and mutator Methods for Intelligence Level
     int getIntelligenceLevel()
@@ -96,12 +110,19 @@ class Batman
 class MermaidMan
 {
     //attributes
-    public:
+    private:
         int age;
         bool raygun;
         
 
     public:
+
+    //Mermaid Constructor
+    MermaidMan(int a, bool ra)
+    {
+        age = a;
+        raygun = ra;
+    }
 
     //accessor and mutator Methods for age
     int getAge()
@@ -141,19 +162,14 @@ class MermaidMan
 int main()
 {
     //constructing MermaindMan Object
-    MermaidMan Ernie;
-    Ernie.setAge(100);
-    Ernie.setRayGun(false);
+    MermaidMan Ernie(100,false);
 
     //contructing Batman Object
-    Batman Bruce;
-    Bruce.setIntelligenceLevel(89);
-    Bruce.setSideKickName("NightWing");
+    Batman Bruce (89,"Nightwing");
 
     //constructing Spiderman Object
-    Spiderman Miles;
-    Miles.setEarth("Earth-42");
-    Miles.setAnomaly(false);
+    Spiderman Miles("Earth-42",false);
+    
     
     
     return 0;
